@@ -1,0 +1,80 @@
+
+table {
+	border-collapse:collapse;
+	width: 70%;
+}
+h1 {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+td {
+	background-color: black;
+	border: 3px solid white;
+	font-size:80px;
+	color:#ffffff;
+	border-radius: 10px 10px 10px 10px;
+	transition-duration: 0.4s;
+}
+p {
+	font-size: 70px;
+
+}
+td:hover {
+	background-color: darkgrey;
+	border: 3px solid white;
+	font-size:80px;
+	color: white;
+	border-radius: 10px 10px 10px 10px;
+}
+.tictactoe {
+	float:left;
+	position: relative;
+	width: 30%;
+	padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+	margin:1.66%;
+	overflow:hidden;
+}
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+	background-color: #00ceff;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	animation-name: animatetop;
+	animation-duration: 0.4s
+
+}
+
+/* The Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: darkgrey;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* Add Animation */
+@keyframes animatetop {
+	from {top: -300px; opacity: 0}
+	to {top: 0; opacity: 1}
+}
